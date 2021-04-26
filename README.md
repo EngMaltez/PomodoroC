@@ -14,3 +14,8 @@ The program will run on MicroPython 1.11 and some M5Stack specific libraries wil
 * [UIFlow code](https://github.com/m5stack/UIFlow-Code/wiki)
 * Beningo, Jacob (2020), *MicroPython Projects, Packt*.
 * [Pomodoro Technique](https://francescocirillo.com/pages/pomodoro-technique)
+
+Extra requirements:
+
+* see charge battery level
+* lower the LCD brightness
