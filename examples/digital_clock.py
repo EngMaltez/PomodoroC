@@ -4,12 +4,12 @@
 @date 20210428
 """
 import json
+import time
 import network
 import socket
 import struct
-from m5stack import lcd
-from uiflow import wait_ms
-import time
+import machine
+from m5stack import lcd, axp
 from flowlib.hw.bm8563 import Bm8563
 
 lcd_brightness = 40
@@ -144,7 +144,7 @@ def loop():
 			# batt_label.setColor(0x33ff33)
 		# else:
 			# batt_label.setColor(0xaaaaaa)
-		wait_ms(200)
+		time.sleep_ms(200)
 
 setup()
 loop()
