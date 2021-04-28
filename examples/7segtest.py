@@ -2,7 +2,8 @@
 
 @date 20200919
 """
-from m5stack import btnA as buttonA
+from time import sleep_ms
+from m5stack import btnA
 
 def display_7seg_test(string, dist, width, outline=True):
 	"""Seven segment N digit display test."""
@@ -20,13 +21,17 @@ def display_7seg_test(string, dist, width, outline=True):
 	lcd.font(lcd.FONT_Default)
 	lcd.print("\n{}".format(fs), 0, 0)
 	counter = 0
-	while True:
+	while not btnA.wasPressed():
 		lcd.print("{:.2f} V".format(axp.getBatVoltage()), lcd.RIGHT, 0)
 		lcd.print("{}".format(counter), lcd.RIGHT, lcd.fontSize()[1])
 		counter += 1
-		wait_ms(500)
-		if buttonA.wasPressed():
-			break
+		sleep_ms(500)
+
+
+lcd.set_fg(lcd.WHITE)
+lcd.set_bg(lcd.BLACK)
+
+axp.setLcdBrightness(50)
 
 while True:
 	# 5 digits of 7-seg
@@ -37,4 +42,3 @@ while True:
 	display_7seg_test("2020-09-19", 8, 1, True)
 	# display the most 7-segment digits
 	display_7seg_test("1.23", 6, 1, False)
-

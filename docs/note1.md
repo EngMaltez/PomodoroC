@@ -97,62 +97,12 @@ Pins  (miso=36, mosi=15, clk=13, cs=5, dc=23, reset=18, backlight=-1) is of type
   FONT_DefaultSmall -- 8
   FONT_7seg -- 9
 
-  image -- <function>
-  hsb2rgb -- <function>
-
-  setwin -- <function>
-  resetwin -- <function>
-  savewin -- <function>
-  restorewin -- <function>
-  screensize -- <function>
-  winsize -- <function>
-
   get_fg -- <function>
   get_bg -- <function>
   set_fg -- <function>
   set_bg -- <function>
   setColor -- <function>
   setTextColor -- <function>
-
-  text_x -- <function>
-  text_y -- <function>
-
-
-  setCursor -- <function>
-  getCursor -- <function>
-
-  fillScreen -- <function>
-  drawPixel -- <function>
-  drawLine -- <function>
-  drawRect -- <function>
-  fillRect -- <function>
-  drawCircle -- <function>
-  fillCircle -- <function>
-  drawTriangle -- <function>
-  fillTriangle -- <function>
-  drawRoundRect -- <function>
-  fillRoundRect -- <function>
-
-  setBrightness -- <function>
-  backlight -- <function>
-
-  qrcode -- <function>
-
-  tft_setspeed -- <function>
-  tft_select -- <function>
-  tft_deselect -- <function>
-  tft_writecmd -- <function>
-  tft_writecmddata -- <function>
-  tft_readcmd -- <function>
-
-  M5STACK -- 6
-  M5STICK -- 4
-  CENTER -- -9003
-  RIGHT -- -9004
-  BOTTOM -- -9004
-  LASTX -- 7000
-  LASTY -- 8000
-
 
   BLACK -- 0
   NAVY -- 128
@@ -173,6 +123,54 @@ Pins  (miso=36, mosi=15, clk=13, cs=5, dc=23, reset=18, backlight=-1) is of type
   ORANGE -- 16557056
   GREENYELLOW -- 11336748
   PINK -- 16564426
+
+  fillScreen -- <function>
+  drawPixel -- <function>
+  drawLine -- <function>
+  drawRect -- <function>
+  fillRect -- <function>
+  drawCircle -- <function>
+  fillCircle -- <function>
+  drawTriangle -- <function>
+  fillTriangle -- <function>
+  drawRoundRect -- <function>
+  fillRoundRect -- <function>
+
+  image -- <function>
+  hsb2rgb -- <function>
+
+  setwin -- <function>
+  resetwin -- <function>
+  savewin -- <function>
+  restorewin -- <function>
+  screensize -- <function>
+  winsize -- <function>
+
+  text_x -- <function>
+  text_y -- <function>
+
+  setCursor -- <function>
+  getCursor -- <function>
+
+  setBrightness -- <function>
+  backlight -- <function>
+
+  qrcode -- <function>
+
+  tft_setspeed -- <function>
+  tft_select -- <function>
+  tft_deselect -- <function>
+  tft_writecmd -- <function>
+  tft_writecmddata -- <function>
+  tft_readcmd -- <function>
+
+  M5STACK -- 6
+  M5STICK -- 4
+  CENTER -- -9003
+  RIGHT -- -9004
+  BOTTOM -- -9004
+  LASTX -- 7000
+  LASTY -- 8000
 
   COLOR_BITS16 -- 16
   COLOR_BITS24 -- 24
